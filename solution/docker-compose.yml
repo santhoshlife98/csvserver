@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  webcsv:
+    build: .
+    image: infracloudio/csvserver:v2
+    environment:
+      - CSVSERVER_BORDER=Orange
+    command: ./csvserver
+    ports:
+      - "9393:9300"
