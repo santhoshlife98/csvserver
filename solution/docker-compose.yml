@@ -1,7 +1,7 @@
 version: "3.9"   
 services:  
   webcsv:
-    build: .
+    #build: .
     image: infracloudio/csvserver:v3
     environment:
       - CSVSERVER_BORDER=Orange
